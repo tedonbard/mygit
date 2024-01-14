@@ -1,0 +1,50 @@
+0. 복사, 붙여넣기 단축키가 다름
+경로 입력시 ""사용하면 윈도우 디렉토리 사용가능
+
+
+1. 로컬저장소와 원격저장소 연결
+git remote add <remote name> <git address>
+ex git remote add mygit https://github.com/tedonbard/mygit
+
+원격 저장소 확인
+git remote --verbose
+
+이름 변경
+git remote rename <old remote name> <new remote name>
+
+연결 삭제
+git remote remove <remote name>
+
+
+2. staging area에 파일올리기
+git add <file name>
+
+한번에 올리기
+git add .
+git add --all
+
+특정 디렉토리에 있는 문서or py파일만
+git add /new/*
+git add *.py
+
+파일 내에서 한 수정사항만 준비영역에 넣기
+git add --patch <file name>
+
+
+3. commit하기
+git commit -m "메세지"
+
+커밋 메시지 수정
+git commit --amend
+
+푸쉬해서 원격저장소로
+git push <remote name> <branch name>
+ex git push mygit master
+
+
+4. 다른사람 코드 가져오기
+git clone <git address>
+
+
+5. 수정사항 로컬로 가져오기
+git pull <remote name> <branch name>
